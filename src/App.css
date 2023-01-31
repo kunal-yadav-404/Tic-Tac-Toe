@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+/* Heading */
+.heading {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+p {
+  text-align: center;
+  font-size: 7em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+}
+
+p:nth-child(1) {
+  font-family: Iceland;
+  animation: kunal 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes kunal {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
+
+@media (max-width: 650px) {
+  p {
+    font-size: 3.5em;
+  }
+}
