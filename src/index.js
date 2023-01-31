@@ -3,13 +3,27 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App.js";
 import reportWebVitals from "./reportWebVitals.js";
+import DocumentMeta from 'react-document-meta';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-);
+){
+const meta = {
+      title: 'Some Meta Title',
+      description: 'I am a description, and I can create multiple tags',
+      canonical: 'http://example.com/path/to/page',
+      meta: {
+        http-equiv:"Permissions-Policy", 
+        content:"interest-cohort=()",
+        name: {
+          keywords: 'react,meta,document,html,tags'
+        }
+      }
+
+};
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
